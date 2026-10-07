@@ -3991,6 +3991,10 @@
         {
           "name": "Orientations",
           "ioValue": 12
+        },
+        {
+          "name": "Search Time (minutes)",
+          "ioValue": 5
         }
       ],
       "placements": [],
@@ -4112,6 +4116,10 @@
         {
           "name": "Orientations",
           "ioValue": 12
+        },
+        {
+          "name": "Search Time (minutes)",
+          "ioValue": 2
         }
       ],
       "placements": [
