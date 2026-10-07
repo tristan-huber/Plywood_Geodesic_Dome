@@ -19,16 +19,15 @@
     },
     {
       "name": "Hub Diameter",
-      "ioValue": 100,
-      "currentEquation": "100"
-    },
-    {
-      "name": "Hub Core Diameter",
-      "ioValue": 80
+      "ioValue": 100
     },
     {
       "name": "Frequency",
       "ioValue": 3
+    },
+    {
+      "name": "Hub Core Diameter",
+      "ioValue": 80
     }
   ],
   "topLevel": true,
@@ -84,7 +83,7 @@
     {
       "atomType": "Input",
       "x": 0,
-      "y": 0.6,
+      "y": 0.5,
       "uniqueID": "id-231",
       "name": "Frequency",
       "type": "number",
@@ -93,7 +92,7 @@
     {
       "atomType": "Input",
       "x": 0,
-      "y": 0.5,
+      "y": 0.6,
       "uniqueID": "id-25",
       "name": "Hub Core Diameter",
       "type": "number",
@@ -753,6 +752,10 @@
       "name": "Rib A",
       "ioValues": [
         {
+          "name": "Frequency",
+          "ioValue": 3
+        },
+        {
           "name": "Dome Diameter",
           "ioValue": 4000
         },
@@ -775,10 +778,6 @@
         {
           "name": "Rib_Index",
           "ioValue": 0
-        },
-        {
-          "name": "Frequency",
-          "ioValue": 3
         }
       ],
       "topLevel": false,
@@ -815,7 +814,7 @@
         {
           "atomType": "Input",
           "x": 0,
-          "y": 0.7,
+          "y": 0.2,
           "uniqueID": "id-240",
           "name": "Frequency",
           "type": "number",
@@ -845,7 +844,7 @@
         {
           "atomType": "Input",
           "x": 0,
-          "y": 0.2,
+          "y": 0.3,
           "uniqueID": "id-70",
           "name": "Rib Depth",
           "type": "number",
@@ -854,7 +853,7 @@
         {
           "atomType": "Input",
           "x": 0,
-          "y": 0.3,
+          "y": 0.4,
           "uniqueID": "id-73",
           "name": "Hub Diameter",
           "type": "number",
@@ -863,7 +862,7 @@
         {
           "atomType": "Input",
           "x": 0,
-          "y": 0.4,
+          "y": 0.5,
           "uniqueID": "id-76",
           "name": "Hub Core Diameter",
           "type": "number",
@@ -872,7 +871,7 @@
         {
           "atomType": "Input",
           "x": 0,
-          "y": 0.5,
+          "y": 0.6,
           "uniqueID": "id-79",
           "name": "Plywood Thickness",
           "type": "number",
@@ -881,7 +880,7 @@
         {
           "atomType": "Input",
           "x": 0,
-          "y": 0.6,
+          "y": 0.7,
           "uniqueID": "id-82",
           "name": "Rib_Index",
           "type": "number",
@@ -898,6 +897,14 @@
               "ioValue": 4000
             },
             {
+              "name": "frequency",
+              "ioValue": 3
+            },
+            {
+              "name": "ribIndex",
+              "ioValue": 0
+            },
+            {
               "name": "ribDepth",
               "ioValue": 75
             },
@@ -908,14 +915,6 @@
             {
               "name": "hubCoreDiameter",
               "ioValue": 80
-            },
-            {
-              "name": "frequency",
-              "ioValue": 3
-            },
-            {
-              "name": "ribIndex",
-              "ioValue": 0
             }
           ],
           "interpreterVersion": 1,
@@ -940,6 +939,21 @@
         }
       ],
       "allConnectors": [
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-103",
+          "ap2ID": "id-106"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-106",
+          "ap2ID": "id-34"
+        },
+        {
+          "ap2Name": "frequency",
+          "ap1ID": "id-240",
+          "ap2ID": "id-85"
+        },
         {
           "ap2Name": "domeDiameter",
           "ap1ID": "id-67",
@@ -979,21 +993,6 @@
           "ap2Name": "geometry",
           "ap1ID": "id-99",
           "ap2ID": "id-103"
-        },
-        {
-          "ap2Name": "geometry",
-          "ap1ID": "id-103",
-          "ap2ID": "id-106"
-        },
-        {
-          "ap2Name": "number or geometry",
-          "ap1ID": "id-106",
-          "ap2ID": "id-34"
-        },
-        {
-          "ap2Name": "frequency",
-          "ap1ID": "id-240",
-          "ap2ID": "id-85"
         }
       ],
       "fileTypeVersion": 1
@@ -1354,6 +1353,14 @@
               "ioValue": 4000
             },
             {
+              "name": "frequency",
+              "ioValue": 3
+            },
+            {
+              "name": "ribIndex",
+              "ioValue": 1
+            },
+            {
               "name": "ribDepth",
               "ioValue": 75
             },
@@ -1364,14 +1371,6 @@
             {
               "name": "hubCoreDiameter",
               "ioValue": 80
-            },
-            {
-              "name": "frequency",
-              "ioValue": 3
-            },
-            {
-              "name": "ribIndex",
-              "ioValue": 1
             }
           ],
           "interpreterVersion": 1,
@@ -1607,6 +1606,14 @@
               "ioValue": 4000
             },
             {
+              "name": "frequency",
+              "ioValue": 3
+            },
+            {
+              "name": "ribIndex",
+              "ioValue": 2
+            },
+            {
               "name": "ribDepth",
               "ioValue": 75
             },
@@ -1617,14 +1624,6 @@
             {
               "name": "hubCoreDiameter",
               "ioValue": 80
-            },
-            {
-              "name": "frequency",
-              "ioValue": 3
-            },
-            {
-              "name": "ribIndex",
-              "ioValue": 2
             }
           ],
           "interpreterVersion": 1,
@@ -1893,22 +1892,6 @@
               "ioValue": "__GEOMETRY_INPUT__"
             },
             {
-              "name": "hubCap",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "domeDiameter",
-              "ioValue": 4000
-            },
-            {
-              "name": "plywoodThickness",
-              "ioValue": 18
-            },
-            {
-              "name": "ribDepth",
-              "ioValue": 75
-            },
-            {
               "name": "ribD",
               "ioValue": "__GEOMETRY_INPUT__"
             },
@@ -1921,8 +1904,24 @@
               "ioValue": "__GEOMETRY_INPUT__"
             },
             {
+              "name": "hubCap",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
               "name": "frequency",
               "ioValue": 3
+            },
+            {
+              "name": "domeDiameter",
+              "ioValue": 4000
+            },
+            {
+              "name": "plywoodThickness",
+              "ioValue": 18
+            },
+            {
+              "name": "ribDepth",
+              "ioValue": 75
             }
           ],
           "interpreterVersion": 1,
@@ -2041,13 +2040,3699 @@
         }
       ],
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "CutOrient",
+      "x": 0.7,
+      "y": 0.8,
+      "uniqueID": "id-677",
+      "name": "Cut Orient",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "orientations": [
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0,
+            1,
+            2.220446049250313e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.7758128122554421,
+            -0.563661001875018,
+            0.28355026945068
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.9510565162951535,
+            -0.3090169943749477,
+            2.2898349882893854e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.18759247408508017,
+            0.9341723589627159,
+            -0.3035309991033429
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.6428889727400947,
+            -0.4670861794813579,
+            0.6070619982066864
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.9510565162951536,
+            -0.3090169943749473,
+            2.220446049250313e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.35048740807942264,
+            0.7453559924999301,
+            -0.5671005389013598
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.4253254041760202,
+            -0.30901699437494734,
+            0.8506508083520401
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.9510565162951538,
+            -0.3090169943749478,
+            -3.608224830031759e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            1.6653345369377348e-16,
+            1,
+            4.440892098500626e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.6428889727400943,
+            -0.4670861794813581,
+            0.6070619982066865
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.8304814468251744,
+            -0.467086179481358,
+            -0.30353099910334286
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.1875924740850798,
+            0.934172358962716,
+            -0.3035309991033431
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.42532540417601955,
+            -0.3090169943749476,
+            0.8506508083520402
+          ]
+        },
+        {
+          "downwardFaceIndex": 9,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.8304814468251744,
+            0.4670861794813583,
+            0.3035309991033432
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            1.1102230246251565e-16,
+            1,
+            2.2204460492503126e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 9,
+          "faceCount": 10,
+          "faceNormal": [
+            0.42532540417602,
+            0.30901699437494745,
+            -0.8506508083520401
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.6005691082157313,
+            -0.5636610018750173,
+            -0.56710053890136
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.26286555605956685,
+            0.8090169943749473,
+            0.5257311121191341
+          ]
+        },
+        {
+          "downwardFaceIndex": 9,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.12109042133422701,
+            0.9120226591665966,
+            -0.3918568348616489
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.5849197102309629,
+            0.6454972243679029,
+            0.4911234731884232
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.4331542106792914,
+            -0.7557613140761709,
+            0.4911234731884232
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.8299660949609268,
+            0.3969943352083514,
+            0.3918568348616483
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.6881909602355869,
+            -0.5000000000000001,
+            0.5257311121191336
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.15176549955167162,
+            0.1102640897082679,
+            -0.9822469463768462
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.15176549955167157,
+            0.11026408970826798,
+            -0.9822469463768462
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.05415328270548426,
+            -0.1666666666666667,
+            0.9845250856095249
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.8506508083520401,
+            -1.942890293094024e-16,
+            -0.5257311121191337
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.2963341253739381,
+            -0.9120226591665966,
+            0.28355026945067974
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.5877852522924736,
+            0.8090169943749473,
+            4.579669976578771e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.9464199718434377,
+            0.11026408970826787,
+            -0.3035309991033429
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.24556173659421143,
+            -0.7557613140761708,
+            0.6070619982066863
+          ]
+        },
+        {
+          "downwardFaceIndex": 9,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.5877852522924736,
+            -0.8090169943749475,
+            -2.498001805406602e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.8171822390376688,
+            -0.10300566479164908,
+            -0.5671005389013598
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.16245984811645275,
+            -0.5000000000000004,
+            0.8506508083520401
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.5877852522924734,
+            0.8090169943749471,
+            2.498001805406602e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.24556173659421116,
+            -0.755761314076171,
+            0.6070619982066862
+          ]
+        },
+        {
+          "downwardFaceIndex": 9,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.7008582352492265,
+            -0.6454972243679028,
+            0.30353099910334275
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.9464199718434376,
+            0.11026408970826793,
+            -0.3035309991033433
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.16245984811645395,
+            -0.4999999999999997,
+            0.85065080835204
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.7008582352492265,
+            0.6454972243679029,
+            -0.3035309991033431
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.1624598481164529,
+            -0.49999999999999983,
+            0.8506508083520402
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.7216595295499584,
+            0.39699433520835076,
+            -0.5671005389013599
+          ]
+        },
+        {
+          "downwardFaceIndex": 9,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.9048040910575246,
+            0.16666666666666696,
+            -0.39185683486164846
+          ]
+        },
+        {
+          "downwardFaceIndex": 9,
+          "faceCount": 10,
+          "faceNormal": [
+            0.7946544722917662,
+            0.35682208977308993,
+            -0.49112347318842325
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.8526237348008979,
+            0.17841104488654505,
+            0.4911234731884228
+          ]
+        },
+        {
+          "downwardFaceIndex": 9,
+          "faceCount": 10,
+          "faceNormal": [
+            0.6340376775301022,
+            0.6666666666666667,
+            -0.391856834861649
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.6881909602355869,
+            0.4999999999999997,
+            0.5257311121191337
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.057969262509131446,
+            0.1784110448865449,
+            -0.982246946376846
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.05796926250913172,
+            0.17841104488654497,
+            -0.9822469463768462
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.14177513472534006,
+            -0.1030056647916492,
+            0.9845250856095249
+          ]
+        },
+        {
+          "downwardFaceIndex": 9,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.2628655560595667,
+            -0.8090169943749473,
+            0.525731112119134
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.9589573737630088,
+            5.551115123125783e-17,
+            0.28355026945067974
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.5877852522924731,
+            0.8090169943749478,
+            4.440892098500626e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.39732723614588306,
+            -0.8660254037844387,
+            -0.30353099910334314
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.7946544722917662,
+            6.938893903907228e-17,
+            0.6070619982066862
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.5877852522924729,
+            0.8090169943749478,
+            -3.608224830031759e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.1545589906485983,
+            -0.8090169943749472,
+            -0.5671005389013601
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.5257311121191338,
+            -3.885780586188048e-16,
+            0.8506508083520401
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.5877852522924735,
+            0.8090169943749473,
+            -5.551115123125783e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.7946544722917661,
+            1.3877787807814457e-17,
+            0.6070619982066862
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.3973272361458831,
+            0.8660254037844388,
+            -0.3035309991033431
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.39732723614588344,
+            -0.8660254037844388,
+            -0.30353099910334314
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.5257311121191341,
+            3.3306690738754706e-16,
+            0.8506508083520397
+          ]
+        },
+        {
+          "downwardFaceIndex": 9,
+          "faceCount": 10,
+          "faceNormal": [
+            0.39732723614588333,
+            -0.8660254037844386,
+            0.30353099910334325
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.5257311121191341,
+            4.440892098500626e-16,
+            0.8506508083520395
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.1545589906485981,
+            0.8090169943749477,
+            -0.5671005389013601
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.4381092600992784,
+            0.8090169943749475,
+            0.39185683486164835
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.09379623704253981,
+            -0.8660254037844387,
+            0.49112347318842314
+          ]
+        },
+        {
+          "downwardFaceIndex": 9,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.09379623704254009,
+            -0.8660254037844388,
+            -0.4911234731884228
+          ]
+        },
+        {
+          "downwardFaceIndex": 9,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.4381092600992784,
+            0.8090169943749476,
+            -0.3918568348616488
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.26286555605956674,
+            0.8090169943749472,
+            0.5257311121191339
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.18759247408507995,
+            7.632783294297951e-17,
+            -0.9822469463768462
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.18759247408507987,
+            -5.551115123125783e-17,
+            -0.9822469463768462
+          ]
+        },
+        {
+          "downwardFaceIndex": 9,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.14177513472534006,
+            -0.10300566479164922,
+            -0.9845250856095249
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.6881909602355872,
+            0.5000000000000002,
+            -0.525731112119133
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.29633412537393833,
+            0.9120226591665964,
+            0.2835502694506802
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.9510565162951536,
+            -0.30901699437494723,
+            -1.0408340855860843e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.700858235249226,
+            -0.645497224367903,
+            -0.3035309991033433
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.2455617365942117,
+            0.7557613140761704,
+            0.6070619982066867
+          ]
+        },
+        {
+          "downwardFaceIndex": 9,
+          "faceCount": 10,
+          "faceNormal": [
+            0.9510565162951536,
+            0.30901699437494734,
+            -2.220446049250313e-16
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.7216595295499584,
+            -0.3969943352083506,
+            -0.5671005389013597
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.16245984811645295,
+            0.4999999999999997,
+            0.8506508083520403
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.9510565162951539,
+            -0.30901699437494673,
+            0
+          ]
+        },
+        {
+          "downwardFaceIndex": 9,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.24556173659421154,
+            -0.7557613140761708,
+            -0.6070619982066863
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.9464199718434378,
+            -0.11026408970826779,
+            -0.30353099910334336
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.7008582352492262,
+            -0.6454972243679029,
+            -0.303530999103343
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.1624598481164535,
+            0.4999999999999994,
+            0.8506508083520403
+          ]
+        },
+        {
+          "downwardFaceIndex": 9,
+          "faceCount": 10,
+          "faceNormal": [
+            0.9464199718434378,
+            0.11026408970826757,
+            0.30353099910334297
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.1624598481164531,
+            0.5,
+            0.8506508083520401
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.8171822390376686,
+            0.10300566479164916,
+            -0.5671005389013604
+          ]
+        },
+        {
+          "downwardFaceIndex": 9,
+          "faceCount": 10,
+          "faceNormal": [
+            0.6340376775301027,
+            -0.6666666666666665,
+            -0.39185683486164863
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.8526237348008977,
+            -0.17841104488654502,
+            0.4911234731884231
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.794654472291766,
+            0.35682208977309016,
+            0.49112347318842337
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.9048040910575242,
+            0.1666666666666664,
+            0.39185683486164924
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.85065080835204,
+            3.608224830031759e-16,
+            0.5257311121191338
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.05796926250913163,
+            -0.17841104488654502,
+            -0.9822469463768463
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.057969262509131564,
+            -0.178411044886545,
+            -0.9822469463768462
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.05415328270548432,
+            0.16666666666666655,
+            0.9845250856095249
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.6881909602355869,
+            -0.4999999999999999,
+            -0.5257311121191338
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.7758128122554422,
+            0.5636610018750176,
+            0.2835502694506804
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.8304814468251747,
+            0.46708617948135744,
+            -0.30353099910334314
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.6428889727400946,
+            0.4670861794813583,
+            0.6070619982066862
+          ]
+        },
+        {
+          "downwardFaceIndex": 9,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.6005691082157312,
+            -0.5636610018750168,
+            0.5671005389013607
+          ]
+        },
+        {
+          "downwardFaceIndex": 9,
+          "faceCount": 10,
+          "faceNormal": [
+            0.4253254041760198,
+            -0.3090169943749474,
+            -0.8506508083520401
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.6428889727400946,
+            0.4670861794813574,
+            0.6070619982066867
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.18759247408507962,
+            -0.9341723589627159,
+            -0.30353099910334297
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.8304814468251747,
+            0.4670861794813578,
+            -0.303530999103343
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.42532540417602005,
+            0.30901699437494723,
+            0.8506508083520402
+          ]
+        },
+        {
+          "downwardFaceIndex": 9,
+          "faceCount": 10,
+          "faceNormal": [
+            0.1875924740850795,
+            0.9341723589627158,
+            0.30353099910334297
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.42532540417601983,
+            0.3090169943749474,
+            0.8506508083520399
+          ]
+        },
+        {
+          "downwardFaceIndex": 9,
+          "faceCount": 10,
+          "faceNormal": [
+            0.35048740807942247,
+            0.7453559924999301,
+            0.56710053890136
+          ]
+        },
+        {
+          "downwardFaceIndex": 9,
+          "faceCount": 10,
+          "faceNormal": [
+            0.8299660949609269,
+            0.396994335208351,
+            -0.39185683486164863
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.4331542106792914,
+            0.7557613140761704,
+            0.49112347318842337
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.5849197102309628,
+            -0.6454972243679032,
+            0.4911234731884229
+          ]
+        },
+        {
+          "downwardFaceIndex": 9,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.1210904213342271,
+            -0.9120226591665963,
+            -0.3918568348616493
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.26286555605956674,
+            -0.8090169943749476,
+            0.5257311121191337
+          ]
+        },
+        {
+          "downwardFaceIndex": 9,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.15176549955167157,
+            0.11026408970826806,
+            0.9822469463768462
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            0.15176549955167165,
+            -0.11026408970826798,
+            -0.9822469463768462
+          ]
+        },
+        {
+          "downwardFaceIndex": 8,
+          "faceCount": 10,
+          "faceNormal": [
+            -0.17524370403971118,
+            -4.1633363423443364e-17,
+            0.9845250856095249
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.3432786130319567,
+            2.775557561562892e-17,
+            -0.9392336204772783
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.3432786130319567,
+            2.775557561562892e-17,
+            -0.9392336204772783
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.10607892523233589,
+            -0.32647736182880477,
+            -0.9392336204772784
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.10607892523233589,
+            -0.32647736182880477,
+            -0.9392336204772784
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.491123473188423,
+            -0.35682208977309027,
+            -0.7946544722917661
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.491123473188423,
+            -0.35682208977309027,
+            -0.7946544722917661
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.21215785046467173,
+            -0.6529547236576094,
+            -0.7270757700126066
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.21215785046467173,
+            -0.6529547236576094,
+            -0.7270757700126066
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.555436463496628,
+            -0.6529547236576098,
+            -0.5149179195479349
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.555436463496628,
+            -0.6529547236576098,
+            -0.5149179195479349
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.2763932022500214,
+            -0.8506508083520398,
+            -0.44721359549995776
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.2763932022500214,
+            -0.8506508083520398,
+            -0.44721359549995776
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.6865572260639132,
+            5.551115123125783e-17,
+            -0.7270757700126066
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.6865572260639132,
+            5.551115123125783e-17,
+            -0.7270757700126066
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.792636151296249,
+            -0.3264773618288049,
+            -0.5149179195479349
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.792636151296249,
+            -0.3264773618288049,
+            -0.5149179195479349
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.8944271909999161,
+            -1.110223024625157e-16,
+            -0.44721359549995765
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.8944271909999161,
+            -1.110223024625157e-16,
+            -0.44721359549995765
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.9642754578122275,
+            -0.20177410616759897,
+            -0.1716393065159783
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.9642754578122275,
+            -0.20177410616759897,
+            -0.1716393065159783
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.794654472291766,
+            -0.5773502691896261,
+            -0.18759247408507973
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.794654472291766,
+            -0.5773502691896261,
+            -0.18759247408507973
+          ]
+        },
+        {
+          "downwardFaceIndex": 3,
+          "faceCount": 4,
+          "faceNormal": [
+            0.48987608221298606,
+            0.8547288298252084,
+            0.1716393065159786
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.48987608221298606,
+            -0.8547288298252084,
+            -0.1716393065159786
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.10607892523233599,
+            -0.9794320854864144,
+            -0.17163930651597817
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.10607892523233599,
+            -0.9794320854864144,
+            -0.17163930651597817
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.2777182317483142,
+            -0.20177410616759892,
+            -0.9392336204772785
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.2777182317483142,
+            -0.20177410616759892,
+            -0.9392336204772785
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.18759247408507987,
+            -0.577350269189626,
+            -0.794654472291766
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.18759247408507987,
+            -0.577350269189626,
+            -0.794654472291766
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.5554364634966281,
+            -0.4035482123351981,
+            -0.7270757700126065
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.5554364634966281,
+            -0.4035482123351981,
+            -0.7270757700126065
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.44935753826429226,
+            -0.7300255741640026,
+            -0.5149179195479348
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.44935753826429226,
+            -0.7300255741640026,
+            -0.5149179195479348
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.7236067977499789,
+            -0.525731112119134,
+            -0.44721359549995776
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.7236067977499789,
+            -0.525731112119134,
+            -0.44721359549995776
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.06556038128364274,
+            -0.8547288298252084,
+            -0.5149179195479345
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.06556038128364274,
+            -0.8547288298252084,
+            -0.5149179195479345
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.303530999103343,
+            -0.9341723589627159,
+            -0.18759247408507967
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.303530999103343,
+            -0.9341723589627159,
+            -0.18759247408507967
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.6615153887289641,
+            -0.7300255741640025,
+            -0.17163930651597842
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.6615153887289641,
+            -0.7300255741640025,
+            -0.17163930651597842
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.898715076528585,
+            -0.40354821233519755,
+            -0.171639306515978
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.898715076528585,
+            -0.40354821233519755,
+            -0.171639306515978
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.27771823174831417,
+            0.20177410616759883,
+            -0.9392336204772784
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.27771823174831417,
+            0.20177410616759883,
+            -0.9392336204772784
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.6070619982066863,
+            0,
+            -0.7946544722917661
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.6070619982066863,
+            0,
+            -0.7946544722917661
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.5554364634966285,
+            0.4035482123351977,
+            -0.7270757700126065
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.5554364634966285,
+            0.4035482123351977,
+            -0.7270757700126065
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.8331546952449428,
+            0.20177410616759872,
+            -0.5149179195479348
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.8331546952449428,
+            0.20177410616759872,
+            -0.5149179195479348
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.7236067977499789,
+            0.5257311121191334,
+            -0.447213595499958
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.7236067977499789,
+            0.5257311121191334,
+            -0.447213595499958
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.8331546952449426,
+            -0.20177410616759903,
+            -0.5149179195479349
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.8331546952449426,
+            -0.20177410616759903,
+            -0.5149179195479349
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.9822469463768462,
+            -2.2204460492503128e-16,
+            -0.18759247408507973
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.9822469463768462,
+            -2.2204460492503128e-16,
+            -0.18759247408507973
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.8987150765285852,
+            0.4035482123351976,
+            -0.17163930651597817
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.8987150765285852,
+            0.4035482123351976,
+            -0.17163930651597817
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.6615153887289645,
+            0.7300255741640025,
+            -0.1716393065159781
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.6615153887289645,
+            0.7300255741640025,
+            -0.1716393065159781
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.10607892523233581,
+            0.32647736182880477,
+            -0.9392336204772784
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.10607892523233581,
+            0.32647736182880477,
+            -0.9392336204772784
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.18759247408508004,
+            0.577350269189626,
+            -0.7946544722917663
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.18759247408508004,
+            0.577350269189626,
+            -0.7946544722917663
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.2121578504646716,
+            0.6529547236576094,
+            -0.7270757700126067
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.2121578504646716,
+            0.6529547236576094,
+            -0.7270757700126067
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.06556038128364255,
+            0.8547288298252085,
+            -0.5149179195479351
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.06556038128364255,
+            0.8547288298252085,
+            -0.5149179195479351
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.27639320225002095,
+            0.8506508083520402,
+            -0.44721359549995787
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.27639320225002095,
+            0.8506508083520402,
+            -0.44721359549995787
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.4493575382642927,
+            0.7300255741640026,
+            -0.5149179195479348
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.4493575382642927,
+            0.7300255741640026,
+            -0.5149179195479348
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.3035309991033433,
+            0.9341723589627159,
+            -0.18759247408507995
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            0.3035309991033433,
+            0.9341723589627159,
+            -0.18759247408507995
+          ]
+        },
+        {
+          "downwardFaceIndex": 3,
+          "faceCount": 4,
+          "faceNormal": [
+            0.10607892523233572,
+            -0.9794320854864144,
+            0.17163930651597825
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.10607892523233572,
+            0.9794320854864144,
+            -0.17163930651597825
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.48987608221298584,
+            0.8547288298252087,
+            -0.17163930651597747
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.48987608221298584,
+            0.8547288298252087,
+            -0.17163930651597747
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.4911234731884229,
+            0.3568220897730901,
+            -0.7946544722917661
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.4911234731884229,
+            0.3568220897730901,
+            -0.7946544722917661
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.7926361512962491,
+            0.32647736182880466,
+            -0.5149179195479351
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.7926361512962491,
+            0.32647736182880466,
+            -0.5149179195479351
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.5554364634966282,
+            0.6529547236576096,
+            -0.5149179195479351
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.5554364634966282,
+            0.6529547236576096,
+            -0.5149179195479351
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.7946544722917661,
+            0.577350269189626,
+            -0.1875924740850794
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.7946544722917661,
+            0.577350269189626,
+            -0.1875924740850794
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.9642754578122275,
+            0.20177410616759897,
+            -0.17163930651597828
+          ]
+        },
+        {
+          "downwardFaceIndex": 2,
+          "faceCount": 4,
+          "faceNormal": [
+            -0.9642754578122275,
+            0.20177410616759897,
+            -0.17163930651597828
+          ]
+        }
+      ],
+      "orientationsForHashed": 212
+    },
+    {
+      "atomType": "CutLayout",
+      "x": 0.8,
+      "y": 0.8,
+      "uniqueID": "id-680",
+      "name": "Cut Layout",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Sheet Width",
+          "ioValue": 2438
+        },
+        {
+          "name": "Sheet Height",
+          "ioValue": 1219
+        },
+        {
+          "name": "Part Padding",
+          "ioValue": 10
+        },
+        {
+          "name": "Orientations",
+          "ioValue": 12
+        }
+      ],
+      "placements": [
+        [
+          {
+            "id": 64,
+            "rotate": 210,
+            "translate": {
+              "x": 17230.083984375,
+              "y": 10687.125
+            }
+          },
+          {
+            "id": 60,
+            "rotate": 180,
+            "translate": {
+              "x": 18962.888671875,
+              "y": 736.4400024414062
+            }
+          },
+          {
+            "id": 72,
+            "rotate": 180,
+            "translate": {
+              "x": 23017.4609375,
+              "y": 736.4400024414062
+            }
+          },
+          {
+            "id": 20,
+            "rotate": 30,
+            "translate": {
+              "x": -5344.49462890625,
+              "y": -3047.63671875
+            }
+          },
+          {
+            "id": 109,
+            "rotate": 60,
+            "translate": {
+              "x": -16808.185546875,
+              "y": -29388.115234375
+            }
+          },
+          {
+            "id": 117,
+            "rotate": 210,
+            "translate": {
+              "x": 33219.6796875,
+              "y": 19832.89453125
+            }
+          },
+          {
+            "id": 3,
+            "rotate": 270,
+            "translate": {
+              "x": 453.1500244140625,
+              "y": 1025.6099853515625
+            }
+          },
+          {
+            "id": 21,
+            "rotate": 270,
+            "translate": {
+              "x": 5.710000038146973,
+              "y": 8068.68017578125
+            }
+          },
+          {
+            "id": 86,
+            "rotate": 90,
+            "translate": {
+              "x": 1368.25,
+              "y": -26444.779296875
+            }
+          },
+          {
+            "id": 106,
+            "rotate": 180,
+            "translate": {
+              "x": 34581.30859375,
+              "y": 902.8800048828125
+            }
+          },
+          {
+            "id": 118,
+            "rotate": 120,
+            "translate": {
+              "x": 20513.806640625,
+              "y": -32050.8984375
+            }
+          },
+          {
+            "id": 113,
+            "rotate": 0,
+            "translate": {
+              "x": -35176.2890625,
+              "y": 87.26000213623047
+            }
+          },
+          {
+            "id": 73,
+            "rotate": 90,
+            "translate": {
+              "x": 1929.75,
+              "y": -22683.1796875
+            }
+          },
+          {
+            "id": 85,
+            "rotate": 240,
+            "translate": {
+              "x": 14407.5400390625,
+              "y": 24758.25390625
+            }
+          },
+          {
+            "id": 68,
+            "rotate": 330,
+            "translate": {
+              "x": -17436.7421875,
+              "y": 11076.572265625
+            }
+          },
+          {
+            "id": 62,
+            "rotate": 60,
+            "translate": {
+              "x": -7751.423828125,
+              "y": -16044.5771484375
+            }
+          },
+          {
+            "id": 93,
+            "rotate": 330,
+            "translate": {
+              "x": -24231.37109375,
+              "y": 15301.01171875
+            }
+          },
+          {
+            "id": 97,
+            "rotate": 180,
+            "translate": {
+              "x": 33018.76953125,
+              "y": 957.4800415039062
+            }
+          },
+          {
+            "id": 115,
+            "rotate": 300,
+            "translate": {
+              "x": -16827.337890625,
+              "y": 31924.373046875
+            }
+          },
+          {
+            "id": 6,
+            "rotate": 0,
+            "translate": {
+              "x": -423.7799072265625,
+              "y": 110.6199951171875
+            }
+          },
+          {
+            "id": 56,
+            "rotate": 30,
+            "translate": {
+              "x": -13095.005859375,
+              "y": -8628.6513671875
+            }
+          },
+          {
+            "id": 76,
+            "rotate": 30,
+            "translate": {
+              "x": -18506.638671875,
+              "y": -11607.02734375
+            }
+          },
+          {
+            "id": 81,
+            "rotate": 330,
+            "translate": {
+              "x": -20152.90625,
+              "y": 12985.626953125
+            }
+          },
+          {
+            "id": 90,
+            "rotate": 150,
+            "translate": {
+              "x": 27297.595703125,
+              "y": -13184.30078125
+            }
+          },
+          {
+            "id": 65,
+            "rotate": 150,
+            "translate": {
+              "x": 18644.953125,
+              "y": -9446.66015625
+            }
+          },
+          {
+            "id": 128,
+            "rotate": 30,
+            "translate": {
+              "x": -33955.6640625,
+              "y": -18908.6875
+            }
+          },
+          {
+            "id": 136,
+            "rotate": 90,
+            "translate": {
+              "x": 152.62001037597656,
+              "y": -39230.390625
+            }
+          },
+          {
+            "id": 165,
+            "rotate": 30,
+            "translate": {
+              "x": -36927.99609375,
+              "y": -20654.748046875
+            }
+          },
+          {
+            "id": 186,
+            "rotate": 120,
+            "translate": {
+              "x": 22995.412109375,
+              "y": -38297.48046875
+            }
+          },
+          {
+            "id": 211,
+            "rotate": 90,
+            "translate": {
+              "x": 420.260009765625,
+              "y": -47011.76953125
+            }
+          },
+          {
+            "id": 147,
+            "rotate": 120,
+            "translate": {
+              "x": 21115.056640625,
+              "y": -34820.51171875
+            }
+          },
+          {
+            "id": 160,
+            "rotate": 90,
+            "translate": {
+              "x": 521.75,
+              "y": -42507.671875
+            }
+          },
+          {
+            "id": 175,
+            "rotate": 60,
+            "translate": {
+              "x": -21480.81640625,
+              "y": -37937.13671875
+            }
+          },
+          {
+            "id": 203,
+            "rotate": 150,
+            "translate": {
+              "x": 41446.21484375,
+              "y": -22677.291015625
+            }
+          },
+          {
+            "id": 125,
+            "rotate": 240,
+            "translate": {
+              "x": 20289.861328125,
+              "y": 34447.78515625
+            }
+          },
+          {
+            "id": 143,
+            "rotate": 90,
+            "translate": {
+              "x": 1030.6199951171875,
+              "y": -40669.55859375
+            }
+          },
+          {
+            "id": 146,
+            "rotate": 210,
+            "translate": {
+              "x": 36608.00390625,
+              "y": 20904.056640625
+            }
+          },
+          {
+            "id": 151,
+            "rotate": 180,
+            "translate": {
+              "x": 42666.90234375,
+              "y": 445.8699951171875
+            }
+          },
+          {
+            "id": 152,
+            "rotate": 120,
+            "translate": {
+              "x": 21949.720703125,
+              "y": -35630.48828125
+            }
+          },
+          {
+            "id": 168,
+            "rotate": 60,
+            "translate": {
+              "x": -20597.3671875,
+              "y": -36970.23046875
+            }
+          },
+          {
+            "id": 169,
+            "rotate": 150,
+            "translate": {
+              "x": 38732.49609375,
+              "y": -20933.27734375
+            }
+          },
+          {
+            "id": 174,
+            "rotate": 210,
+            "translate": {
+              "x": 39420.8984375,
+              "y": 22210.103515625
+            }
+          },
+          {
+            "id": 176,
+            "rotate": 120,
+            "translate": {
+              "x": 23521.173828125,
+              "y": -37949.65625
+            }
+          },
+          {
+            "id": 185,
+            "rotate": 210,
+            "translate": {
+              "x": 40438.3359375,
+              "y": 22980.337890625
+            }
+          },
+          {
+            "id": 187,
+            "rotate": 240,
+            "translate": {
+              "x": 24217.818359375,
+              "y": 39571.05859375
+            }
+          },
+          {
+            "id": 197,
+            "rotate": 210,
+            "translate": {
+              "x": 41747.00390625,
+              "y": 24205.533203125
+            }
+          },
+          {
+            "id": 205,
+            "rotate": 30,
+            "translate": {
+              "x": -39075.05078125,
+              "y": -22693.89453125
+            }
+          },
+          {
+            "id": 141,
+            "rotate": 120,
+            "translate": {
+              "x": 22084.375,
+              "y": -34379.01171875
+            }
+          },
+          {
+            "id": 142,
+            "rotate": 90,
+            "translate": {
+              "x": 1929.1099853515625,
+              "y": -40457.71875
+            }
+          },
+          {
+            "id": 156,
+            "rotate": 150,
+            "translate": {
+              "x": 38549.08203125,
+              "y": -19883.6796875
+            }
+          },
+          {
+            "id": 163,
+            "rotate": 30,
+            "translate": {
+              "x": -35015.1015625,
+              "y": -20535.08203125
+            }
+          },
+          {
+            "id": 164,
+            "rotate": 270,
+            "translate": {
+              "x": 2056.010009765625,
+              "y": 43800.0078125
+            }
+          },
+          {
+            "id": 178,
+            "rotate": 270,
+            "translate": {
+              "x": 2071.429931640625,
+              "y": 45509.859375
+            }
+          },
+          {
+            "id": 184,
+            "rotate": 90,
+            "translate": {
+              "x": 2179.169921875,
+              "y": -44262.73046875
+            }
+          },
+          {
+            "id": 191,
+            "rotate": 90,
+            "translate": {
+              "x": 2207.14990234375,
+              "y": -44670.44921875
+            }
+          },
+          {
+            "id": 194,
+            "rotate": 240,
+            "translate": {
+              "x": 25143.748046875,
+              "y": 40766.56640625
+            }
+          },
+          {
+            "id": 200,
+            "rotate": 300,
+            "translate": {
+              "x": -21114.6953125,
+              "y": 41441.65234375
+            }
+          },
+          {
+            "id": 204,
+            "rotate": 150,
+            "translate": {
+              "x": 43009.7890625,
+              "y": -23317.826171875
+            }
+          },
+          {
+            "id": 206,
+            "rotate": 90,
+            "translate": {
+              "x": 2341.83984375,
+              "y": -46957.12890625
+            }
+          },
+          {
+            "id": 207,
+            "rotate": 270,
+            "translate": {
+              "x": 2258.190185546875,
+              "y": 47671.87109375
+            }
+          },
+          {
+            "id": 140,
+            "rotate": 240,
+            "translate": {
+              "x": 20766.025390625,
+              "y": 35505.54296875
+            }
+          }
+        ],
+        [
+          {
+            "id": 84,
+            "rotate": 30,
+            "translate": {
+              "x": -22933.16015625,
+              "y": -13281.1064453125
+            }
+          },
+          {
+            "id": 40,
+            "rotate": 270,
+            "translate": {
+              "x": 5.809999942779541,
+              "y": 13759.7998046875
+            }
+          },
+          {
+            "id": 96,
+            "rotate": 210,
+            "translate": {
+              "x": 27384.615234375,
+              "y": 16130.69921875
+            }
+          },
+          {
+            "id": 31,
+            "rotate": 270,
+            "translate": {
+              "x": 5.699999809265137,
+              "y": 11055.75
+            }
+          },
+          {
+            "id": 38,
+            "rotate": 330,
+            "translate": {
+              "x": -10697.853515625,
+              "y": 6302.7177734375
+            }
+          },
+          {
+            "id": 69,
+            "rotate": 150,
+            "translate": {
+              "x": 19670.265625,
+              "y": -10331.37109375
+            }
+          },
+          {
+            "id": 92,
+            "rotate": 0,
+            "translate": {
+              "x": -28357.5703125,
+              "y": 50.410003662109375
+            }
+          },
+          {
+            "id": 44,
+            "rotate": 120,
+            "translate": {
+              "x": 8439.0458984375,
+              "y": -11012.8369140625
+            }
+          },
+          {
+            "id": 12,
+            "rotate": 330,
+            "translate": {
+              "x": -2300.6103515625,
+              "y": 2615.33642578125
+            }
+          },
+          {
+            "id": 24,
+            "rotate": 240,
+            "translate": {
+              "x": 3935.79052734375,
+              "y": 7928.34912109375
+            }
+          },
+          {
+            "id": 36,
+            "rotate": 240,
+            "translate": {
+              "x": 6376.75732421875,
+              "y": 11342.0693359375
+            }
+          },
+          {
+            "id": 4,
+            "rotate": 60,
+            "translate": {
+              "x": 1014.5625,
+              "y": -551.9923095703125
+            }
+          },
+          {
+            "id": 87,
+            "rotate": 300,
+            "translate": {
+              "x": -12749.6669921875,
+              "y": 24212.55078125
+            }
+          },
+          {
+            "id": 32,
+            "rotate": 150,
+            "translate": {
+              "x": 9663.7607421875,
+              "y": -4512.6513671875
+            }
+          },
+          {
+            "id": 119,
+            "rotate": 90,
+            "translate": {
+              "x": 1749.510009765625,
+              "y": -38112.73828125
+            }
+          },
+          {
+            "id": 17,
+            "rotate": 270,
+            "translate": {
+              "x": 1039.7900390625,
+              "y": 5802.2900390625
+            }
+          },
+          {
+            "id": 63,
+            "rotate": 180,
+            "translate": {
+              "x": 21536.23046875,
+              "y": 1097.47998046875
+            }
+          },
+          {
+            "id": 52,
+            "rotate": 90,
+            "translate": {
+              "x": 1782.4400634765625,
+              "y": -16017.1494140625
+            }
+          },
+          {
+            "id": 5,
+            "rotate": 270,
+            "translate": {
+              "x": 5.569999694824219,
+              "y": 1633.5400390625
+            }
+          },
+          {
+            "id": 110,
+            "rotate": 90,
+            "translate": {
+              "x": 610.77001953125,
+              "y": -35161.48046875
+            }
+          },
+          {
+            "id": 95,
+            "rotate": 90,
+            "translate": {
+              "x": 2290.989990234375,
+              "y": -29497.5703125
+            }
+          },
+          {
+            "id": 83,
+            "rotate": 120,
+            "translate": {
+              "x": 14853.3662109375,
+              "y": -21864.142578125
+            }
+          },
+          {
+            "id": 35,
+            "rotate": 240,
+            "translate": {
+              "x": 7407.9248046875,
+              "y": 10094.58203125
+            }
+          },
+          {
+            "id": 59,
+            "rotate": 90,
+            "translate": {
+              "x": 2387.219970703125,
+              "y": -18557.849609375
+            }
+          },
+          {
+            "id": 2,
+            "rotate": 90,
+            "translate": {
+              "x": 2408.679931640625,
+              "y": 144.280029296875
+            }
+          },
+          {
+            "id": 16,
+            "rotate": 90,
+            "translate": {
+              "x": 2401.39013671875,
+              "y": -4736.080078125
+            }
+          },
+          {
+            "id": 132,
+            "rotate": 0,
+            "translate": {
+              "x": -39679.66796875,
+              "y": 971.4600219726562
+            }
+          }
+        ],
+        [
+          {
+            "id": 49,
+            "rotate": 240,
+            "translate": {
+              "x": 7722.43359375,
+              "y": 13446.0361328125
+            }
+          },
+          {
+            "id": 105,
+            "rotate": 120,
+            "translate": {
+              "x": 17452.322265625,
+              "y": -28729.177734375
+            }
+          },
+          {
+            "id": 102,
+            "rotate": 150,
+            "translate": {
+              "x": 28609.76171875,
+              "y": -15544.0703125
+            }
+          },
+          {
+            "id": 107,
+            "rotate": 240,
+            "translate": {
+              "x": 17128.919921875,
+              "y": 30239.703125
+            }
+          },
+          {
+            "id": 14,
+            "rotate": 60,
+            "translate": {
+              "x": -1681.333740234375,
+              "y": -3400.345458984375
+            }
+          },
+          {
+            "id": 79,
+            "rotate": 300,
+            "translate": {
+              "x": -12418.0966796875,
+              "y": 22584.845703125
+            }
+          },
+          {
+            "id": 9,
+            "rotate": 270,
+            "translate": {
+              "x": 196.5500030517578,
+              "y": 3405.590087890625
+            }
+          },
+          {
+            "id": 26,
+            "rotate": 30,
+            "translate": {
+              "x": -6397.18359375,
+              "y": -3901.660400390625
+            }
+          },
+          {
+            "id": 33,
+            "rotate": 30,
+            "translate": {
+              "x": -8158.2666015625,
+              "y": -5290.2568359375
+            }
+          },
+          {
+            "id": 112,
+            "rotate": 330,
+            "translate": {
+              "x": -30109.640625,
+              "y": 18619.50390625
+            }
+          },
+          {
+            "id": 27,
+            "rotate": 300,
+            "translate": {
+              "x": -3531.2314453125,
+              "y": 8518.3642578125
+            }
+          },
+          {
+            "id": 41,
+            "rotate": 330,
+            "translate": {
+              "x": -10435.44140625,
+              "y": 6705.46875
+            }
+          },
+          {
+            "id": 89,
+            "rotate": 180,
+            "translate": {
+              "x": 28386.021484375,
+              "y": 622.8899536132812
+            }
+          },
+          {
+            "id": 71,
+            "rotate": 180,
+            "translate": {
+              "x": 23684.80859375,
+              "y": 828.25
+            }
+          },
+          {
+            "id": 0,
+            "rotate": 180,
+            "translate": {
+              "x": 1448.5799560546875,
+              "y": 614.9199829101562
+            }
+          },
+          {
+            "id": 7,
+            "rotate": 0,
+            "translate": {
+              "x": -481.2799072265625,
+              "y": 265.94000244140625
+            }
+          },
+          {
+            "id": 34,
+            "rotate": 180,
+            "translate": {
+              "x": 12680.9501953125,
+              "y": 1121.72998046875
+            }
+          }
+        ],
+        [
+          {
+            "id": 78,
+            "rotate": 60,
+            "translate": {
+              "x": -11637.568359375,
+              "y": -21414.306640625
+            }
+          },
+          {
+            "id": 114,
+            "rotate": 240,
+            "translate": {
+              "x": 18391.57421875,
+              "y": 32052.62890625
+            }
+          },
+          {
+            "id": 11,
+            "rotate": 180,
+            "translate": {
+              "x": 3711.659912109375,
+              "y": 996.4199829101562
+            }
+          },
+          {
+            "id": 37,
+            "rotate": 330,
+            "translate": {
+              "x": -10312.9921875,
+              "y": 6275.1171875
+            }
+          },
+          {
+            "id": 45,
+            "rotate": 90,
+            "translate": {
+              "x": 735.5399780273438,
+              "y": -13207.060546875
+            }
+          },
+          {
+            "id": 55,
+            "rotate": 90,
+            "translate": {
+              "x": 776.780029296875,
+              "y": -16215.26953125
+            }
+          },
+          {
+            "id": 67,
+            "rotate": 150,
+            "translate": {
+              "x": 18934.71875,
+              "y": -9780.890625
+            }
+          },
+          {
+            "id": 42,
+            "rotate": 300,
+            "translate": {
+              "x": -6329.36083984375,
+              "y": 12483.3232421875
+            }
+          },
+          {
+            "id": 80,
+            "rotate": 0,
+            "translate": {
+              "x": -24486.349609375,
+              "y": 5.939999580383301
+            }
+          },
+          {
+            "id": 1,
+            "rotate": 150,
+            "translate": {
+              "x": 1587.053466796875,
+              "y": 536.8057861328125
+            }
+          },
+          {
+            "id": 15,
+            "rotate": 150,
+            "translate": {
+              "x": 5687.646484375,
+              "y": -1781.116455078125
+            }
+          },
+          {
+            "id": 29,
+            "rotate": 30,
+            "translate": {
+              "x": -6860.2734375,
+              "y": -4087.31103515625
+            }
+          },
+          {
+            "id": 8,
+            "rotate": 330,
+            "translate": {
+              "x": -828.174072265625,
+              "y": 1814.90234375
+            }
+          },
+          {
+            "id": 154,
+            "rotate": 240,
+            "translate": {
+              "x": 20990.7890625,
+              "y": 37336.3828125
+            }
+          },
+          {
+            "id": 188,
+            "rotate": 180,
+            "translate": {
+              "x": 45446.65234375,
+              "y": 914.4500122070312
+            }
+          }
+        ],
+        [
+          {
+            "id": 30,
+            "rotate": 300,
+            "translate": {
+              "x": -4833.4609375,
+              "y": 8418.5576171875
+            }
+          },
+          {
+            "id": 10,
+            "rotate": 300,
+            "translate": {
+              "x": -1492.2591552734375,
+              "y": 2865.87646484375
+            }
+          },
+          {
+            "id": 25,
+            "rotate": 120,
+            "translate": {
+              "x": 4712.64892578125,
+              "y": -6609.28662109375
+            }
+          },
+          {
+            "id": 101,
+            "rotate": 0,
+            "translate": {
+              "x": -31590.83984375,
+              "y": 5.640000343322754
+            }
+          },
+          {
+            "id": 88,
+            "rotate": 90,
+            "translate": {
+              "x": 726.280029296875,
+              "y": -27448.98046875
+            }
+          },
+          {
+            "id": 54,
+            "rotate": 60,
+            "translate": {
+              "x": -7842.8525390625,
+              "y": -13879.1845703125
+            }
+          },
+          {
+            "id": 19,
+            "rotate": 60,
+            "translate": {
+              "x": -2501.828369140625,
+              "y": -4525.49951171875
+            }
+          },
+          {
+            "id": 66,
+            "rotate": 300,
+            "translate": {
+              "x": -9825.82421875,
+              "y": 18576.724609375
+            }
+          },
+          {
+            "id": 57,
+            "rotate": 150,
+            "translate": {
+              "x": 16603.6171875,
+              "y": -8376.9306640625
+            }
+          },
+          {
+            "id": 39,
+            "rotate": 180,
+            "translate": {
+              "x": 13760.0498046875,
+              "y": 718.6000366210938
+            }
+          },
+          {
+            "id": 70,
+            "rotate": 90,
+            "translate": {
+              "x": 1361.9599609375,
+              "y": -21338.240234375
+            }
+          },
+          {
+            "id": 74,
+            "rotate": 240,
+            "translate": {
+              "x": 12394.244140625,
+              "y": 21258.001953125
+            }
+          },
+          {
+            "id": 28,
+            "rotate": 60,
+            "translate": {
+              "x": -2982.03271484375,
+              "y": -7506.11962890625
+            }
+          },
+          {
+            "id": 46,
+            "rotate": 210,
+            "translate": {
+              "x": 13676.73046875,
+              "y": 7925.9365234375
+            }
+          },
+          {
+            "id": 75,
+            "rotate": 60,
+            "translate": {
+              "x": -10291.0439453125,
+              "y": -19709.265625
+            }
+          },
+          {
+            "id": 18,
+            "rotate": 150,
+            "translate": {
+              "x": 6818.634765625,
+              "y": -1823.27392578125
+            }
+          },
+          {
+            "id": 99,
+            "rotate": 0,
+            "translate": {
+              "x": -29962.05078125,
+              "y": 597.22998046875
+            }
+          }
+        ],
+        [
+          {
+            "id": 48,
+            "rotate": 90,
+            "translate": {
+              "x": 748.010009765625,
+              "y": -14902.849609375
+            }
+          },
+          {
+            "id": 61,
+            "rotate": 300,
+            "translate": {
+              "x": -9461.162109375,
+              "y": 16731.14453125
+            }
+          },
+          {
+            "id": 108,
+            "rotate": 300,
+            "translate": {
+              "x": -17124.884765625,
+              "y": 30117.65625
+            }
+          },
+          {
+            "id": 94,
+            "rotate": 120,
+            "translate": {
+              "x": 15565.3662109375,
+              "y": -25149.91015625
+            }
+          },
+          {
+            "id": 91,
+            "rotate": 300,
+            "translate": {
+              "x": -14326.921875,
+              "y": 25514.7734375
+            }
+          },
+          {
+            "id": 43,
+            "rotate": 0,
+            "translate": {
+              "x": -13074.76953125,
+              "y": 489.14996337890625
+            }
+          },
+          {
+            "id": 58,
+            "rotate": 30,
+            "translate": {
+              "x": -14866.8876953125,
+              "y": -8576.81640625
+            }
+          },
+          {
+            "id": 53,
+            "rotate": 330,
+            "translate": {
+              "x": -13848.7333984375,
+              "y": 8700.240234375
+            }
+          },
+          {
+            "id": 180,
+            "rotate": 180,
+            "translate": {
+              "x": 44638.54296875,
+              "y": 1202.6199951171875
+            }
+          },
+          {
+            "id": 193,
+            "rotate": 330,
+            "translate": {
+              "x": -39716.75390625,
+              "y": 23946.578125
+            }
+          }
+        ],
+        [
+          {
+            "id": 111,
+            "rotate": 240,
+            "translate": {
+              "x": 17870.177734375,
+              "y": 31045.458984375
+            }
+          },
+          {
+            "id": 100,
+            "rotate": 120,
+            "translate": {
+              "x": 16655.515625,
+              "y": -27427.388671875
+            }
+          },
+          {
+            "id": 98,
+            "rotate": 240,
+            "translate": {
+              "x": 15759.8134765625,
+              "y": 27687.765625
+            }
+          },
+          {
+            "id": 13,
+            "rotate": 60,
+            "translate": {
+              "x": -1553.879150390625,
+              "y": -3468.674072265625
+            }
+          },
+          {
+            "id": 22,
+            "rotate": 0,
+            "translate": {
+              "x": -6277.39013671875,
+              "y": 5.769999980926514
+            }
+          },
+          {
+            "id": 77,
+            "rotate": 330,
+            "translate": {
+              "x": -20258.3046875,
+              "y": 12187.1787109375
+            }
+          },
+          {
+            "id": 47,
+            "rotate": 270,
+            "translate": {
+              "x": 5.940000534057617,
+              "y": 15407.1796875
+            }
+          },
+          {
+            "id": 155,
+            "rotate": 60,
+            "translate": {
+              "x": -20930.279296875,
+              "y": -35802.94140625
+            }
+          },
+          {
+            "id": 137,
+            "rotate": 300,
+            "translate": {
+              "x": -20002.03125,
+              "y": 35501.8515625
+            }
+          },
+          {
+            "id": 192,
+            "rotate": 30,
+            "translate": {
+              "x": -39263.89453125,
+              "y": -22552.65234375
+            }
+          }
+        ],
+        [
+          {
+            "id": 103,
+            "rotate": 270,
+            "translate": {
+              "x": 5.940000057220459,
+              "y": 33162.8515625
+            }
+          },
+          {
+            "id": 50,
+            "rotate": 30,
+            "translate": {
+              "x": -13381.1787109375,
+              "y": -7598.86279296875
+            }
+          },
+          {
+            "id": 104,
+            "rotate": 240,
+            "translate": {
+              "x": 16742.837890625,
+              "y": 29316.748046875
+            }
+          },
+          {
+            "id": 116,
+            "rotate": 210,
+            "translate": {
+              "x": 32990.546875,
+              "y": 19430.43359375
+            }
+          },
+          {
+            "id": 190,
+            "rotate": 270,
+            "translate": {
+              "x": 95.1300048828125,
+              "y": 45806.16015625
+            }
+          },
+          {
+            "id": 135,
+            "rotate": 30,
+            "translate": {
+              "x": -34492.46875,
+              "y": -19739.138671875
+            }
+          },
+          {
+            "id": 139,
+            "rotate": 90,
+            "translate": {
+              "x": 240.58999633789062,
+              "y": -39795.62890625
+            }
+          }
+        ],
+        [
+          {
+            "id": 51,
+            "rotate": 30,
+            "translate": {
+              "x": -13516.8154296875,
+              "y": -7999.837890625
+            }
+          },
+          {
+            "id": 23,
+            "rotate": 240,
+            "translate": {
+              "x": 3741.4521484375,
+              "y": 7087.9453125
+            }
+          },
+          {
+            "id": 82,
+            "rotate": 300,
+            "translate": {
+              "x": -12931.3486328125,
+              "y": 23175.68359375
+            }
+          },
+          {
+            "id": 183,
+            "rotate": 240,
+            "translate": {
+              "x": 22455.263671875,
+              "y": 39596.5703125
+            }
+          },
+          {
+            "id": 195,
+            "rotate": 30,
+            "translate": {
+              "x": -39841.69140625,
+              "y": -22759.34375
+            }
+          },
+          {
+            "id": 148,
+            "rotate": 240,
+            "translate": {
+              "x": 20687.875,
+              "y": 36058.171875
+            }
+          },
+          {
+            "id": 166,
+            "rotate": 210,
+            "translate": {
+              "x": 37416.09375,
+              "y": 21738.90234375
+            }
+          },
+          {
+            "id": 173,
+            "rotate": 330,
+            "translate": {
+              "x": -37871.46484375,
+              "y": 21950.203125
+            }
+          },
+          {
+            "id": 170,
+            "rotate": 90,
+            "translate": {
+              "x": 201.45999145507812,
+              "y": -43406.796875
+            }
+          },
+          {
+            "id": 124,
+            "rotate": 330,
+            "translate": {
+              "x": -33560.96875,
+              "y": 19925.12109375
+            }
+          },
+          {
+            "id": 129,
+            "rotate": 330,
+            "translate": {
+              "x": -33936.73828125,
+              "y": 20085.521484375
+            }
+          }
+        ],
+        [
+          {
+            "id": 157,
+            "rotate": 0,
+            "translate": {
+              "x": -42204.76953125,
+              "y": 5.389999866485596
+            }
+          },
+          {
+            "id": 189,
+            "rotate": 60,
+            "translate": {
+              "x": -22647.30859375,
+              "y": -39256.1484375
+            }
+          },
+          {
+            "id": 121,
+            "rotate": 180,
+            "translate": {
+              "x": 38679.6796875,
+              "y": 327.1300048828125
+            }
+          },
+          {
+            "id": 131,
+            "rotate": 120,
+            "translate": {
+              "x": 19915.888671875,
+              "y": -33911.05859375
+            }
+          },
+          {
+            "id": 144,
+            "rotate": 120,
+            "translate": {
+              "x": 20572.396484375,
+              "y": -34937.1171875
+            }
+          },
+          {
+            "id": 159,
+            "rotate": 60,
+            "translate": {
+              "x": -21132.423828125,
+              "y": -36188.328125
+            }
+          },
+          {
+            "id": 162,
+            "rotate": 240,
+            "translate": {
+              "x": 21394.755859375,
+              "y": 37781.4609375
+            }
+          },
+          {
+            "id": 177,
+            "rotate": 90,
+            "translate": {
+              "x": 105.40999603271484,
+              "y": -43448.5703125
+            }
+          },
+          {
+            "id": 179,
+            "rotate": 90,
+            "translate": {
+              "x": 105.5199966430664,
+              "y": -43539.73046875
+            }
+          },
+          {
+            "id": 181,
+            "rotate": 210,
+            "translate": {
+              "x": 38728,
+              "y": 23438.634765625
+            }
+          },
+          {
+            "id": 198,
+            "rotate": 330,
+            "translate": {
+              "x": -40058.23828125,
+              "y": 23933.673828125
+            }
+          },
+          {
+            "id": 120,
+            "rotate": 30,
+            "translate": {
+              "x": -33185.5859375,
+              "y": -18639.677734375
+            }
+          },
+          {
+            "id": 126,
+            "rotate": 30,
+            "translate": {
+              "x": -33710.50390625,
+              "y": -19497.15234375
+            }
+          },
+          {
+            "id": 138,
+            "rotate": 120,
+            "translate": {
+              "x": 20365.41796875,
+              "y": -33913.30859375
+            }
+          },
+          {
+            "id": 158,
+            "rotate": 150,
+            "translate": {
+              "x": 36862.27734375,
+              "y": -20693.6328125
+            }
+          },
+          {
+            "id": 122,
+            "rotate": 120,
+            "translate": {
+              "x": 19557.52734375,
+              "y": -33290.40234375
+            }
+          },
+          {
+            "id": 130,
+            "rotate": 150,
+            "translate": {
+              "x": 34413.3515625,
+              "y": -19390.62109375
+            }
+          },
+          {
+            "id": 145,
+            "rotate": 180,
+            "translate": {
+              "x": 41201.73828125,
+              "y": 937.2699584960938
+            }
+          },
+          {
+            "id": 161,
+            "rotate": 330,
+            "translate": {
+              "x": -36818.984375,
+              "y": 21843.21875
+            }
+          },
+          {
+            "id": 167,
+            "rotate": 30,
+            "translate": {
+              "x": -37296.9140625,
+              "y": -20569.34375
+            }
+          },
+          {
+            "id": 182,
+            "rotate": 60,
+            "translate": {
+              "x": -22102.033203125,
+              "y": -38089.08984375
+            }
+          },
+          {
+            "id": 199,
+            "rotate": 30,
+            "translate": {
+              "x": -39999.7734375,
+              "y": -22240.38671875
+            }
+          },
+          {
+            "id": 208,
+            "rotate": 120,
+            "translate": {
+              "x": 23996.140625,
+              "y": -40978.890625
+            }
+          },
+          {
+            "id": 210,
+            "rotate": 210,
+            "translate": {
+              "x": 41456.71484375,
+              "y": 24238.259765625
+            }
+          },
+          {
+            "id": 127,
+            "rotate": 60,
+            "translate": {
+              "x": -19324.236328125,
+              "y": -33722.1953125
+            }
+          },
+          {
+            "id": 134,
+            "rotate": 270,
+            "translate": {
+              "x": 197.90000915527344,
+              "y": 40103.359375
+            }
+          },
+          {
+            "id": 149,
+            "rotate": 270,
+            "translate": {
+              "x": 199.39999389648438,
+              "y": 42395.33203125
+            }
+          },
+          {
+            "id": 150,
+            "rotate": 240,
+            "translate": {
+              "x": 20982.95703125,
+              "y": 36842.96875
+            }
+          },
+          {
+            "id": 153,
+            "rotate": 120,
+            "translate": {
+              "x": 21221.44140625,
+              "y": -35613.31640625
+            }
+          },
+          {
+            "id": 172,
+            "rotate": 210,
+            "translate": {
+              "x": 38135.7734375,
+              "y": 22430.046875
+            }
+          },
+          {
+            "id": 201,
+            "rotate": 240,
+            "translate": {
+              "x": 23606.943359375,
+              "y": 41624.4609375
+            }
+          },
+          {
+            "id": 123,
+            "rotate": 330,
+            "translate": {
+              "x": -33305.99609375,
+              "y": 19702.482421875
+            }
+          },
+          {
+            "id": 171,
+            "rotate": 60,
+            "translate": {
+              "x": -21450.255859375,
+              "y": -37737.80078125
+            }
+          },
+          {
+            "id": 196,
+            "rotate": 300,
+            "translate": {
+              "x": -22798.9921875,
+              "y": 40206.4140625
+            }
+          },
+          {
+            "id": 202,
+            "rotate": 240,
+            "translate": {
+              "x": 23703.55078125,
+              "y": 41559.92578125
+            }
+          },
+          {
+            "id": 133,
+            "rotate": 120,
+            "translate": {
+              "x": 20305.828125,
+              "y": -33699.765625
+            }
+          },
+          {
+            "id": 209,
+            "rotate": 270,
+            "translate": {
+              "x": 295.3800048828125,
+              "y": 48399.9921875
+            }
+          }
+        ]
+      ]
     }
   ],
   "allConnectors": [
     {
       "ap2Name": "Dome Diameter",
       "ap1ID": "id-13",
+      "ap2ID": "id-255"
+    },
+    {
+      "ap2Name": "Dome Diameter",
+      "ap1ID": "id-13",
+      "ap2ID": "id-305"
+    },
+    {
+      "ap2Name": "Dome Diameter",
+      "ap1ID": "id-13",
       "ap2ID": "id-32"
+    },
+    {
+      "ap2Name": "Dome Diameter",
+      "ap1ID": "id-13",
+      "ap2ID": "id-355"
     },
     {
       "ap2Name": "Dome Diameter",
@@ -2065,19 +5750,9 @@
       "ap2ID": "id-44"
     },
     {
-      "ap2Name": "Dome Diameter",
-      "ap1ID": "id-13",
+      "ap2Name": "Plywood Thickness",
+      "ap1ID": "id-16",
       "ap2ID": "id-255"
-    },
-    {
-      "ap2Name": "Dome Diameter",
-      "ap1ID": "id-13",
-      "ap2ID": "id-305"
-    },
-    {
-      "ap2Name": "Dome Diameter",
-      "ap1ID": "id-13",
-      "ap2ID": "id-355"
     },
     {
       "ap2Name": "Plywood Thickness",
@@ -2087,7 +5762,17 @@
     {
       "ap2Name": "Plywood Thickness",
       "ap1ID": "id-16",
+      "ap2ID": "id-305"
+    },
+    {
+      "ap2Name": "Plywood Thickness",
+      "ap1ID": "id-16",
       "ap2ID": "id-32"
+    },
+    {
+      "ap2Name": "Plywood Thickness",
+      "ap1ID": "id-16",
+      "ap2ID": "id-355"
     },
     {
       "ap2Name": "Plywood Thickness",
@@ -2105,24 +5790,24 @@
       "ap2ID": "id-44"
     },
     {
-      "ap2Name": "Plywood Thickness",
-      "ap1ID": "id-16",
+      "ap2Name": "Rib Depth",
+      "ap1ID": "id-19",
       "ap2ID": "id-255"
     },
     {
-      "ap2Name": "Plywood Thickness",
-      "ap1ID": "id-16",
+      "ap2Name": "Rib Depth",
+      "ap1ID": "id-19",
       "ap2ID": "id-305"
-    },
-    {
-      "ap2Name": "Plywood Thickness",
-      "ap1ID": "id-16",
-      "ap2ID": "id-355"
     },
     {
       "ap2Name": "Rib Depth",
       "ap1ID": "id-19",
       "ap2ID": "id-32"
+    },
+    {
+      "ap2Name": "Rib Depth",
+      "ap1ID": "id-19",
+      "ap2ID": "id-355"
     },
     {
       "ap2Name": "Rib Depth",
@@ -2140,19 +5825,9 @@
       "ap2ID": "id-44"
     },
     {
-      "ap2Name": "Rib Depth",
-      "ap1ID": "id-19",
+      "ap2Name": "Hub Diameter",
+      "ap1ID": "id-22",
       "ap2ID": "id-255"
-    },
-    {
-      "ap2Name": "Rib Depth",
-      "ap1ID": "id-19",
-      "ap2ID": "id-305"
-    },
-    {
-      "ap2Name": "Rib Depth",
-      "ap1ID": "id-19",
-      "ap2ID": "id-355"
     },
     {
       "ap2Name": "Hub Diameter",
@@ -2162,7 +5837,17 @@
     {
       "ap2Name": "Hub Diameter",
       "ap1ID": "id-22",
+      "ap2ID": "id-305"
+    },
+    {
+      "ap2Name": "Hub Diameter",
+      "ap1ID": "id-22",
       "ap2ID": "id-32"
+    },
+    {
+      "ap2Name": "Hub Diameter",
+      "ap1ID": "id-22",
+      "ap2ID": "id-355"
     },
     {
       "ap2Name": "Hub Diameter",
@@ -2175,24 +5860,59 @@
       "ap2ID": "id-40"
     },
     {
-      "ap2Name": "Hub Diameter",
-      "ap1ID": "id-22",
+      "ap2Name": "Frequency",
+      "ap1ID": "id-231",
       "ap2ID": "id-255"
     },
     {
-      "ap2Name": "Hub Diameter",
-      "ap1ID": "id-22",
+      "ap2Name": "Frequency",
+      "ap1ID": "id-231",
       "ap2ID": "id-305"
     },
     {
-      "ap2Name": "Hub Diameter",
-      "ap1ID": "id-22",
+      "ap2Name": "Frequency",
+      "ap1ID": "id-231",
+      "ap2ID": "id-32"
+    },
+    {
+      "ap2Name": "Frequency",
+      "ap1ID": "id-231",
       "ap2ID": "id-355"
+    },
+    {
+      "ap2Name": "Frequency",
+      "ap1ID": "id-231",
+      "ap2ID": "id-36"
+    },
+    {
+      "ap2Name": "Frequency",
+      "ap1ID": "id-231",
+      "ap2ID": "id-40"
+    },
+    {
+      "ap2Name": "Frequency",
+      "ap1ID": "id-231",
+      "ap2ID": "id-44"
+    },
+    {
+      "ap2Name": "Hub Core Diameter",
+      "ap1ID": "id-25",
+      "ap2ID": "id-255"
+    },
+    {
+      "ap2Name": "Hub Core Diameter",
+      "ap1ID": "id-25",
+      "ap2ID": "id-305"
     },
     {
       "ap2Name": "Hub Core Diameter",
       "ap1ID": "id-25",
       "ap2ID": "id-32"
+    },
+    {
+      "ap2Name": "Hub Core Diameter",
+      "ap1ID": "id-25",
+      "ap2ID": "id-355"
     },
     {
       "ap2Name": "Hub Core Diameter",
@@ -2205,19 +5925,9 @@
       "ap2ID": "id-40"
     },
     {
-      "ap2Name": "Hub Core Diameter",
-      "ap1ID": "id-25",
-      "ap2ID": "id-255"
-    },
-    {
-      "ap2Name": "Hub Core Diameter",
-      "ap1ID": "id-25",
-      "ap2ID": "id-305"
-    },
-    {
-      "ap2Name": "Hub Core Diameter",
-      "ap1ID": "id-25",
-      "ap2ID": "id-355"
+      "ap2Name": "Rib D",
+      "ap1ID": "id-255",
+      "ap2ID": "id-44"
     },
     {
       "ap2Name": "Hub Cap",
@@ -2225,8 +5935,18 @@
       "ap2ID": "id-44"
     },
     {
+      "ap2Name": "Rib E",
+      "ap1ID": "id-305",
+      "ap2ID": "id-44"
+    },
+    {
       "ap2Name": "Rib A",
       "ap1ID": "id-32",
+      "ap2ID": "id-44"
+    },
+    {
+      "ap2Name": "Rib F",
+      "ap1ID": "id-355",
       "ap2ID": "id-44"
     },
     {
@@ -2245,54 +5965,14 @@
       "ap2ID": "id-2"
     },
     {
-      "ap2Name": "Frequency",
-      "ap1ID": "id-231",
-      "ap2ID": "id-32"
+      "ap2Name": "geometry",
+      "ap1ID": "id-44",
+      "ap2ID": "id-677"
     },
     {
-      "ap2Name": "Frequency",
-      "ap1ID": "id-231",
-      "ap2ID": "id-36"
-    },
-    {
-      "ap2Name": "Frequency",
-      "ap1ID": "id-231",
-      "ap2ID": "id-40"
-    },
-    {
-      "ap2Name": "Frequency",
-      "ap1ID": "id-231",
-      "ap2ID": "id-255"
-    },
-    {
-      "ap2Name": "Frequency",
-      "ap1ID": "id-231",
-      "ap2ID": "id-305"
-    },
-    {
-      "ap2Name": "Frequency",
-      "ap1ID": "id-231",
-      "ap2ID": "id-355"
-    },
-    {
-      "ap2Name": "Frequency",
-      "ap1ID": "id-231",
-      "ap2ID": "id-44"
-    },
-    {
-      "ap2Name": "Rib D",
-      "ap1ID": "id-255",
-      "ap2ID": "id-44"
-    },
-    {
-      "ap2Name": "Rib E",
-      "ap1ID": "id-305",
-      "ap2ID": "id-44"
-    },
-    {
-      "ap2Name": "Rib F",
-      "ap1ID": "id-355",
-      "ap2ID": "id-44"
+      "ap2Name": "geometry",
+      "ap1ID": "id-677",
+      "ap2ID": "id-680"
     }
   ],
   "unitsKey": "MM",

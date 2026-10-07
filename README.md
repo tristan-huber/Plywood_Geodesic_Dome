@@ -10,8 +10,8 @@
 - **Plywood Thickness** (number)
 - **Rib Depth** (number)
 - **Hub Diameter** (number)
-- **Hub Core Diameter** (number)
 - **Frequency** (number)
+- **Hub Core Diameter** (number)
 
 
 
