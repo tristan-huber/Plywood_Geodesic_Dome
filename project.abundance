@@ -3994,7 +3994,8 @@
         },
         {
           "name": "Search Time (minutes)",
-          "ioValue": 5
+          "ioValue": 5,
+          "currentEquation": "5"
         }
       ],
       "placements": [],
